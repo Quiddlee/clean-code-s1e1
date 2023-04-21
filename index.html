@@ -13,43 +13,43 @@
 
 <main class="app">
   <section class="add-task">
-    <label class="add-task__title" for="new-task">Add Item</label>
+    <label class="title add-task__title" for="new-task">Add Item</label>
 
     <div class="add-task__field">
-      <input id="new-task" class="flex-grow add-task__field__input" type="text">
+      <input id="new-task" class="input input--text flex-grow add-task__field__input" type="text">
       <button class="btn add-task__field__btn">Add</button>
     </div>
   </section>
 
-  <h3>Todo</h3>
+  <h3 class="title">Todo</h3>
 
   <ul class="unfulfilled-tasks">
-    <li class="unfulfilled-tasks__item">
-      <input class="unfulfilled-tasks__item__check" type="checkbox">
-      <label class="flex-grow unfulfilled-tasks__item__title">Pay Bills</label>
-      <input type="text" class="unfulfilled-tasks__item__input">
-      <button class="btn--light unfulfilled-tasks__item__edit-btn">Edit</button>
-      <button class="unfulfilled-tasks__item__delete-btn"><img class="btn--delete unfulfilled-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
+    <li class="task unfulfilled-tasks__item">
+      <input class="input input--check unfulfilled-tasks__item__check" type="checkbox">
+      <label class="task-title flex-grow unfulfilled-tasks__item__title">Pay Bills</label>
+      <input type="text" class="input input--text unfulfilled-tasks__item__input">
+      <button class="btn btn--light unfulfilled-tasks__item__edit-btn">Edit</button>
+      <button class="btn unfulfilled-tasks__item__delete-btn"><img class="btn--delete unfulfilled-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
     </li>
 
-    <li class="unfulfilled-tasks__item edit-mode">
-      <input class="unfulfilled-tasks__item__check" type="checkbox">
-      <label class="flex-grow unfulfilled-tasks__item__title">Go Shopping</label>
-      <input type="text" value="Go Shopping" class="unfulfilled-tasks__item__input">
-      <button class="btn--light unfulfilled-tasks__item__save-btn">Save</button>
-      <button class="unfulfilled-tasks__item__delete-btn"><img class="btn--delete unfulfilled-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
+    <li class="task unfulfilled-tasks__item edit-mode">
+      <input class="input input--check unfulfilled-tasks__item__check" type="checkbox">
+      <label class="task-title flex-grow unfulfilled-tasks__item__title">Go Shopping</label>
+      <input type="text" value="Go Shopping" class="input input--text unfulfilled-tasks__item__input">
+      <button class="btn btn--light unfulfilled-tasks__item__save-btn">Save</button>
+      <button class="btn unfulfilled-tasks__item__delete-btn"><img class="btn--delete unfulfilled-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
     </li>
   </ul>
 
-  <h3>Completed</h3>
+  <h3 class="title">Completed</h3>
 
   <ul class="completed-tasks">
-    <li class="completed-tasks__item">
-      <input class="completed-tasks__item__check" type="checkbox" checked>
-      <label class="flex-grow completed-tasks__item__title">See the Doctor</label>
-      <input type="text" class="flex-grow completed-tasks__item__input">
-      <button class="btn--light completed-tasks__item__edit-btn">Edit</button>
-      <button class="completed-tasks__item__delete-btn"><img class="btn--delete completed-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
+    <li class="task completed-tasks__item">
+      <input class="input input--check completed-tasks__item__check" type="checkbox" checked>
+      <label class="task-title flex-grow completed-tasks__item__title">See the Doctor</label>
+      <input type="text" class="input input--text flex-grow completed-tasks__item__input">
+      <button class="btn btn--light completed-tasks__item__edit-btn">Edit</button>
+      <button class="btn completed-tasks__item__delete-btn"><img class="btn--delete completed-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
     </li>
   </ul>
 </main>
