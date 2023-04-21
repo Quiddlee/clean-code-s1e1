@@ -5,7 +5,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="body">
 <header class="header">
   <img class="header__img" src="./eisenhower-matrix.jpg" alt="The Eisenhower Matrix">
   <a class="header__details" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
@@ -29,7 +29,7 @@
       <label class="flex-grow unfulfilled-tasks__item__title">Pay Bills</label>
       <input type="text" class="unfulfilled-tasks__item__input">
       <button class="btn--light unfulfilled-tasks__item__edit-btn">Edit</button>
-      <button class="btn--delete unfulfilled-tasks__item__delete-btn"><img src="./remove.svg" alt=""></button>
+      <button class="unfulfilled-tasks__item__delete-btn"><img class="btn--delete unfulfilled-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
     </li>
 
     <li class="unfulfilled-tasks__item edit-mode">
@@ -37,7 +37,7 @@
       <label class="flex-grow unfulfilled-tasks__item__title">Go Shopping</label>
       <input type="text" value="Go Shopping" class="unfulfilled-tasks__item__input">
       <button class="btn--light unfulfilled-tasks__item__save-btn">Save</button>
-      <button class="btn--delete unfulfilled-tasks__item__delete-btn"><img src="./remove.svg" alt=""></button>
+      <button class="unfulfilled-tasks__item__delete-btn"><img class="btn--delete unfulfilled-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
     </li>
   </ul>
 
@@ -49,7 +49,7 @@
       <label class="flex-grow completed-tasks__item__title">See the Doctor</label>
       <input type="text" class="flex-grow completed-tasks__item__input">
       <button class="btn--light completed-tasks__item__edit-btn">Edit</button>
-      <button class="btn--delete completed-tasks__item__delete-btn"><img src="./remove.svg" alt=""></button>
+      <button class="completed-tasks__item__delete-btn"><img class="btn--delete completed-tasks__item__delete-btn__icon" src="./remove.svg" alt=""></button>
     </li>
   </ul>
 </main>
